@@ -1,0 +1,646 @@
+.aviso_internet {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis.Light', sans-serif;
+    font-weight: 100;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;    height: 100%;
+    margin: 0;    
+}
+
+.contenido_variable {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Dosis.Bold";
+    src: url("../fuentes/Dosis-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Dosis.Book";
+    src: url("../fuentes/Dosis-Book.ttf");
+}
+
+@font-face {
+    font-family: "Dosis.Light";
+    src: url("../fuentes/Dosis-Light.ttf");
+}
+
+.mvl {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenido_variable a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: darkgray;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    darkgray;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    darkgray;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    darkgray;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    darkgray;
+}
+
+/* administracion */
+
+.zona_admin {
+    height: 100%;
+}
+
+.zona_administracion {
+    height: 73.5%;
+}
+
+.cabecera.admin, .cabecera.administracion{
+    height: auto;
+}
+
+.zona_admin .slider_admin {
+    width: 100%;
+    height: 100%;
+    background: #444444;
+}
+
+.body.admin {
+    width: 100%;
+    height: 100% !important;
+    margin: 0;
+}
+
+.titulo_modulo_admin {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.login {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.login input[type="text"] {
+    height: 30px;
+    width: 200px;
+    border: 3px solid lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login input[type="password"] {
+    height: 30px;
+    width: 200px;
+    border: 3px solid lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login .registro {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-right: 1%;
+  margin-top: 2%;
+  font-size: 13px;
+  width: 70px;
+}
+
+.login input[type="submit"] {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-right: 38%;
+  margin-top: 2%;
+  font-size: 18px;
+}
+
+.botones_user {
+    margin-left: 28%;
+}
+
+.footer.admin {
+   background-color: #444444;
+}
+
+.cuerpo_general_admin {
+    padding-top: 15%;
+}
+
+.cabecera.administracion .cabecera_izq {
+    width: 25%;
+    float: left;
+    height: 150px;
+}
+
+.cabecera.administracion .cabecera_izq .logo_pardal {
+    width: 300px;
+    padding-top: 1%;
+    position: fixed;
+    height: 100px;
+}
+
+.cabecera.administracion .cabecera_der {
+    width: 75%;
+    float: right;
+    text-align: right;
+    height: 150px;
+    background: #EDEEF0;
+    position: fixed;
+    margin-left: 25%;
+}
+
+.cabecera.administracion a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecera.administracion .cabecera_der .user_administrador,.cabecera.administracion .cabecera_der .user_salir {
+    padding-right: 5%;
+    padding-top: 1%;
+    height: 50px;
+}
+
+.cabecera.administracion .cabecera_der h4,.cabecera.administracion .cabecera_der h5  {
+    margin-right: 5%;
+    color: #9A999E;
+    margin-top: 1.8%;
+}
+
+.user_administrador {
+    background: url("../images/iconos_areaprivada/ap_user.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: 95% 85%;
+}
+
+.user_salir {
+    background: url("../images/iconos_areaprivada/ap_cerrar.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 94.5% 75%;
+}
+
+.listas {
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+.lista_opcions_admin {
+    padding-top: 30px;
+    width: 25%;
+    float: left;    
+    height: 100%;
+    background: #EDEEF0;
+    list-style: none;
+    position: fixed;
+}
+
+.lista_subopcions_chofer, .lista_subopcions_camion {
+    margin-top: -47px;
+    width: 25%;
+    float: left;    
+    background: #EDEEF0;
+    list-style: none;
+    display: none;
+    z-index: 999;
+    position: fixed;
+    margin-left: 22.7%;
+}
+
+.lista_subopcions_chofer ul li, .lista_subopcions_camion ul li {
+    padding-left: 18%;
+    font-size: 18px;
+    color: #9A999E;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    cursor: pointer;
+}
+
+.lista_subopcions_chofer ul a, .lista_subopcions_camion ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list_chofers, .list_camiones {
+    border-bottom: 3px solid #9A999E;
+}
+
+.lista_subopcions_cliente {
+    margin-top: -49px;
+    width: 25%;
+    float: left;    
+    background: #EDEEF0;
+    list-style: none;
+    display: none;
+    z-index: 999;
+    position: fixed;
+    margin-left: 22.7%;
+}
+
+.lista_subopcions_cliente ul li {
+    padding-left: 18%;
+    font-size: 18px;
+    color: #9A999E;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    cursor: pointer;
+}
+
+.lista_subopcions_cliente ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list_clientes {
+    border-bottom: 3px solid #9A999E;
+}
+
+.lista_subopcions_chofer ul li:hover, .lista_subopcions_camion ul li:hover, .lista_subopcions_cliente ul li:hover {
+    color: white;
+    background: url("../images/iconos_areaprivada/ap_flechaBL.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.cuerpo_opcion_admin {
+    width: 75%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.listas img {
+    height: 35px;
+    width: 35px;
+    margin-bottom: -10px;
+    padding-right: 5%;
+}
+
+.chofers_admin, .volver_admin {
+    border-top: 3px solid #9A999E;
+    padding-left: 5%;
+    font-size: 18px;
+    color: #9A999E;
+    border-bottom: 3px solid #9A999E;
+    padding-top: 4.12%;
+    padding-bottom: 5%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.clientes_admin, .listas .slider_admin, .camiones_admin, .clave_user {
+    padding-left: 5%;
+    font-size: 18px;
+    color: #9A999E;
+    border-bottom: 3px solid #9A999E;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.a_chofers, .l_chofers, .a_camiones, .l_camiones, .a_clientes, .a_clave, .l_clientes, .ed_chofer, .ed_camion, .ed_cliente {
+    /*display: none;*/
+    margin-left: 5%;
+}
+
+.l_chofers h2, .ed_chofer h2, .l_camiones h2, .l_clientes h2, .ed_camion h2, .ed_cliente h2, .a_chofers h2, .a_camiones h2, .a_clientes h2, .a_clave h2 {
+    color: #9A999E;
+    margin-top: -2%;
+}
+
+.ed_chofer, .ed_camion, .ed_producto, .ed_slider, .ed_cliente {
+    margin-top: 3%;
+}
+
+.chofers_fila1, .camiones_fila1, .clientes_fila1, .clave_fila1 {   
+    height: 65px;
+    width: 66%;
+}
+
+.chofers_fila1 div, .camiones_fila1 div, .clientes_fila1 div, .clave_fila1 div {
+    width: 50%;
+    float: left;
+    margin-top: 2%;
+}
+
+.chofers_fila1 div a, .camiones_fila1 div a, .clientes_fila1 div a, .clave_fila1 div a, .no_estilo {
+    text-decoration: none;
+    color: inherit;
+}
+
+.enl_chofer .enl_camion {
+    text-decoration: none;
+    color: inherit;
+    margin-top: -2%;
+    background-color: #727176;
+    padding: 5px;
+    padding-left: 20px;
+    /* padding-right: 20px; */
+    color: white;
+    cursor: pointer;
+    width: 33%;
+}
+
+.enl_chofer, .enl_camion, .enl_cliente{
+    text-decoration: none;
+    color: inherit;
+    margin-top: -2%;
+    background-color: #727176;
+    padding: 5px;
+    padding-left: 20px;
+    /* padding-right: 20px; */
+    color: white;
+    cursor: pointer;
+    width: 40%;
+}
+
+.en_chofer, .en_camion, .en_cliente, .in_chofer, .in_clave, .in_camion, .in_cliente {
+    margin-right: 20%;
+}
+
+.tabla_chofers, .tabla_camiones, .tabla_clientes, .tab_clientes, .tabla_add_chofer, .tabla_add_camion, .tabla_add_cliente, .tabla_add_clave {
+    width: 100%; 
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom: 2%;
+}
+
+.tabla_chofers, .tabla_camiones, .tabla_clientes {
+    margin-bottom: 2%;
+}
+
+
+.tabla_chofers th, .tabla_camiones th, .tabla_clientes th, .tab_clientes th, .tabla_add_chofer th, .tabla_add_camion th, .tabla_add_cliente th, .tabla_add_clave th {
+    color: #9A999E;
+    margin-bottom: 1%;
+    border-bottom: white 5px solid;
+    padding-left: 1%;
+}
+
+.tabla_chofers tr, .tabla_camiones tr, .tabla_clientes tr, .tab_clientes tr, .tabla_add_chofer tr, .tabla_add_camion tr, .tabla_add_cliente tr, .tabla_add_clave tr {
+    height: 30px;
+    background-color: #EDEEF0;
+    border-bottom: white 5px solid;
+}
+
+.tabla_chofers tr td, .tabla_camiones tr td, .tabla_clientes tr td {
+    padding-left: 1%;
+}
+
+.tabla_chofers tr td:nth-child(2), .tabla_chofers tr td:nth-child(3), .tabla_chofers tr td:nth-child(4),
+.tabla_camiones tr td:nth-child(2), .tabla_camiones tr td:nth-child(3),
+.tabla_clientes tr td:nth-child(2), .tabla_clientes tr td:nth-child(3) {
+    width: 150px;
+    border-left: white 7px solid;
+}
+
+.tabla_clientes tr td:nth-child(4), .tabla_clientes tr td:nth-child(5) {
+    width: 100px;
+    border-left: white 7px solid;
+}
+
+.formulario_chofer, .formulario_camion, .formulario_clave {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.formulario_chofer div, .formulario_camion div, .formulario_clave div {
+    width: 97.7%;
+}
+
+input#titulo_ed_chofer {
+    width: 99%;
+    height: 30px;
+    font-style: italic;
+    padding-left: 1%;
+    border: 1px solid #9A999E;
+}
+
+input#contra_usuario, input#nombre_chofer, input#apellidos_chofer,  input#dni_chofer,  input#telefono_chofer, input#login_chofer, input#clave_chofer, input#nombre_cliente, input#apellidos_cliente, input#dni_cliente, input#telefono_cliente, input#nombre_empresa, input#cif_empresa, input#marca_camion, input#modelo_camion, input#matricula_camion, input#km_camion {
+    width: 99%;
+    height: 30px;
+    font-style: italic;
+    padding-left: 1%;
+    border: 1px solid #9A999E;
+}
+
+.contra_usuario, .nombre_chofer, .apellidos_chofer, .dni_chofer, .telefono_chofer, .login_chofer, .clave_chofer, .nombre_cliente, .apellidos_cliente, .dni_cliente, .telefono_cliente, .nombre_empresa, .cif_empresa, .marca_camion, .modelo_camion, .matricula_camion, .km_camion {
+  border: 1px solid #9A999E;
+  padding: 1%;
+  margin-top: 2%;
+  color: #9A999E;
+  padding-top: 0;
+}
+
+.des_chofer, .des_camion { 
+    width: 99%;
+    height: 60px;
+    font-style: italic;
+    padding-left: 1%;
+    border: 1px solid #9A999E;
+}
+
+.formulario_chofer .boton_chofer, .formulario_camion .boton_camion, .formulario_cliente .boton_cliente, .formulario_clave .boton_clave {
+    margin-top: 2%;
+    width: 100%;
+    text-align: right;
+}
+
+.formulario_chofer .boton_chofer input, .formulario_camion .boton_camion input, .formulario_cliente .boton_cliente input, .formulario_clave .boton_clave input {    
+    background-color: #727176;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.tabla_chofers .iconos_bd, .tabla_camiones .iconos_bd, .tabla_clientes .iconos_bd {
+    width: 30%;
+    height: 11px;
+    float: left;
+    margin-top: -0.5%;
+    margin-right: 5%;
+}
+
+.iconos_bd .img1_bd, .iconos_bd .img2_bd {
+    height: 20px;
+    width: auto;
+    float: left;
+    margin-left: 17%;
+}
+
+.iconos_bd .img1_bd, .iconos_bd .img2_bd {
+    height: 20px;
+    width: auto;
+    float: left;
+    margin-left: 3%;
+    cursor: pointer
+}
+
+.iconos_bd .img1_bd img, .iconos_bd .img2_bd img{
+    cursor: pointer;
+}
+
+.paginacion_chofers, .paginacion_camiones, .paginacion_camiones, .paginacion_clientes {
+    text-align: center;
+}
+
+.paginacion_chofers a, .paginacion_camiones a, .paginacion_camiones a, .paginacion_clientes a {
+    color: #9A999E;
+    text-decoration: none;
+}
+
+.paginacion_chofers a.color, .paginacion_camiones a.color, .paginacion_camiones a.color, .paginacion_clientes a.color {    
+    color: #9A999E;
+}
+
+.buscador {
+    width: 33%;
+    margin-top: -8%;
+    height: 50px;
+    /* margin-bottom: 2%; */
+    float: right;
+}
+
+.texto_busqueda {
+    color: #9A999E;
+    text-align: center;
+}
+
+.boton {
+    height: 26px;
+    width: 28px;
+    margin-left: -0.5%;
+    border: 1px solid #9A999E;
+}
+
+input#buscar_chofer, input#buscar_camion, input#buscar_cliente {
+    height: 28px;
+    width: 150px;
+    margin-left: 29%;
+}
+
+.formu_input {
+    float: left;
+    width: 57%;
+}
+
+.formu_img {
+    float: left;
+    width: 2%;
+    margin-left: 27%;
+}
+
+.oculto {
+    display: none;
+}
+
+.oculta_img {
+    width: 51%;
+    display: none;
+}
+
+.cabecera.admin .menu_activo {
+    border: none;
+}
+
+#buscador_chofer, #buscador_camion, #buscador_cliente {
+    float: right;
+}
+
+@media screen and (min-width: 1700px){
+
+    .cabecera {
+        width: 100%;
+        height: 800px;
+    }
+
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1550px){
+
+    .cabecera {
+        width: 100%;
+        height: 685px;
+    }
+
+}
+
+@media screen and (max-width: 1366px){
+    .contenido_variable {
+        width: 960px;
+        margin: 0 auto;
+    } 
+
+    .cabecera {
+        width: 100%;
+        height: 635px;
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+    }
+
+    .menu ul li {
+        padding: 20px 7px 20px 7px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .contenido_variable {
+        width: 960px;
+        margin: 0 auto;
+    } 
+
+    .cabecera {
+        width: 100%;
+        height: 650px;
+    }
+}
+

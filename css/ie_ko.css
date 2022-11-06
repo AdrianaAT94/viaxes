@@ -1,0 +1,21 @@
+.container {
+    display: none;
+}
+.aviso_internet{
+	color: #777777;
+    display: block;
+    line-height: 20px;
+    margin: 40px;
+}
+.aviso_internet a {
+	color: ##00A9E4 !important;
+}
+.aviso_internet a:hover {
+	text-decoration: underline;
+}
+.aviso_internet img {
+	width: 234px;
+}
+a, img {
+	border: none;
+}
